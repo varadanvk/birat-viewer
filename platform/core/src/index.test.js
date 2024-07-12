@@ -9,6 +9,7 @@ describe('Top level exports', () => {
       'ExtensionManager',
       'HotkeysManager',
       'ServicesManager',
+      'ServiceProvidersManager',
       //
       'defaults',
       'utils',
@@ -45,6 +46,9 @@ describe('Top level exports', () => {
       'pubSubServiceInterface',
       'PubSubService',
       'PanelService',
+      'WorkflowStepsService',
+      'StudyPrefetcherService',
+      'useToolbar',
     ].sort();
 
     const exports = Object.keys(OHIF).sort();
