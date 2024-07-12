@@ -39,7 +39,7 @@ function Header({
       isSticky={isSticky}
       {...props}
     >
-      <div className="relative h-[48px] items-center ">
+      <div className="relative h-[48px] items-center">
         <div className="absolute left-0 top-1/2 flex -translate-y-1/2 items-center">
           <div
             className={classNames(
@@ -49,18 +49,22 @@ function Header({
             onClick={onClickReturn}
             data-cy="return-to-work-list"
           >
-            {isReturnEnabled && (
+            {/* {isReturnEnabled && (
               <Icon
                 name="chevron-left"
                 className="text-primary-active w-8"
               />
-            )}
-            <div className="ml-1">
-              {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Svg name="logo-ohif" />}
+            )} */}
+            <div
+              className="ml-9"
+              style={{ color: 'white' }}
+            >
+              {/* {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Svg name="logo-ohif" />} */}
+              BiRAT
             </div>
           </div>
         </div>
-        <div className="absolute top-1/2 left-[250px]  h-8 -translate-y-1/2">{Secondary}</div>
+        <div className="absolute top-1/2 left-[250px] h-8 -translate-y-1/2">{Secondary}</div>
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
           <div className="flex items-center justify-center space-x-2">{children}</div>
         </div>
